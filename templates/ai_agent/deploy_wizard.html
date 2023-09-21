@@ -1,0 +1,25 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="container">
+    <h2>Deploy Your Babyagi AI Agent</h2>
+    <form method="POST">
+      {% csrf_token %}
+      <div class="form-group">
+        <label for="agentName">Agent Name</label>
+        <input type="text" class="form-control" id="agentName" name="agentName" required>
+      </div>
+      <div class="form-group">
+        <label for="sampleQuestions">Sample Questions</label>
+        <textarea class="form-control" id="sampleQuestions" name="sampleQuestions" rows="3" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="apiKey">GPT-3.5 16k API Key</label>
+        <input type="text" class="form-control" id="apiKey" name="apiKey" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Deploy</button>
+    </form>
+  </div>
+{% endblock %}
+

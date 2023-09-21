@@ -1,0 +1,46 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#deploy-wizard {
+    margin-top: 50px;
+}
+
+.deploy-step {
+    margin-bottom: 30px;
+}
+
+.deploy-step label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.deploy-step input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.deploy-step input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.deploy-step input[type="submit"]:hover {
+    background-color: #444;
+}
